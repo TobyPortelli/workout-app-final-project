@@ -1,3 +1,8 @@
+/* Color swatch:
+    #045300 (dark green)
+    #01b017 (light green)
+    #*/
+
 /* Universal */
 * {
     margin: 0;
@@ -19,16 +24,76 @@ body {
 }
 
 /* Header */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:fixed;
+    height: 72px;
+    width: 100%;
+    top: 0;
+    background-color: rgba(37, 35, 43, .95);
+
+}
+
+#site-nav {
+    display: flex;
+    list-style-type: none;
+}
+
+#site-nav li {
+    padding: 0 25px;
+    font-size: 1.5rem;
+}
+
+#site-nav li a {
+    text-decoration: none;
+}
+
 #logo {
-    color: #ff9d00;
+    color: white;
+    font-size: 2rem;
 }
 
 nav img {
-    width: 50px;
-    height: 50px;
+    text-align: center;
+    width: 25px;
+    height: auto;
+}
+
+a, a:active, a:visited {
+    color: white;
+}
+
+a:hover {
+    color: rgb(184, 184, 184);
 }
 
 /* Main */
-
+main {
+    margin-top: 72px;
+}
 
 /* Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color: #25232B;
+    color: white;
+}
+
+#footer-contact {
+    display: flex;
+    font-size: 2rem;
+}
+
+#footer-contact p {
+    padding: 0 20px;
+}
+
+#socials img {
+    padding: 0 20px;
+}
