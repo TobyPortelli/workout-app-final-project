@@ -79,20 +79,29 @@ main {
 }
 
 .main-side-nav {
-    background-color: #3CAFAC;
     height: 600px;
     width: 300px;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 } 
 
-#search-nav ul li {
+#search-nav-list ul li {
     list-style-type: none;
-    font-size: 2rem;
+    font-size: 1.25rem;
+    margin: 10px 0;
 }
+
+  form.main-search input[type=text] {
+    padding: 10px;
+    font-size: 1.25rem;
+    border: 1px solid #045300;
+    float: left;
+    background: #f1f1f1;
+  }
+
+
 
 .gallery img{
     width: 200px;
@@ -121,3 +130,4 @@ footer {
 #socials img {
     padding: 0 20px;
 }
+
