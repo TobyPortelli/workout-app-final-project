@@ -1,9 +1,12 @@
 /* Color swatch:
     #045300 (dark green)
     #01b017 (light green)
+    #3cafac (cyan)
+    #718977 (olive)
+    #25232b (dark olive)
     #*/
 
-/* Universal */
+/* Universal and extra large devices */
 * {
     margin: 0;
     padding: 0;
@@ -69,13 +72,17 @@ a:hover {
     color: rgb(184, 184, 184);
 }
 
+#hamburger {
+    display: none;
+}
+
 /* Main */
 main {
     padding-top: 5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 85%;
+    min-height: 85%;
 }
 
 .main-side-nav {
@@ -122,8 +129,10 @@ main {
 
 
 .gallery img{
-    width: 200px;
-    height: 200px;
+    width: 10vw;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
     margin: 2.5px;
 }
 
@@ -138,15 +147,63 @@ footer {
     font-size: 1.75rem;
     background-color: #25232B;
     color: white;
-    position: absolute;
     bottom: 0;
 }
-
-/* #footer-contact p {
-    padding: 0 20px;
-} */
 
 #socials img {
     padding: 0 20px;
 }
 
+/* large devices */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    /* header */
+    #site-nav > *:not(:last-child) {
+        display: none;
+    }
+
+    #hamburger {
+        display: block; 
+        z-index: 1;
+    }
+
+    #hamburger span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+
+        background: white;
+    }
+
+    .gallery img {
+        width: 10vw;
+        height: auto;
+    }
+}
+
+/* Medium Devices */
+@media screen and (max-width: 991px) {
+    /* Header */
+    #site-nav > *:not(:last-child) {
+        display: none;
+    }
+
+    #hamburger {
+        display: block; 
+        z-index: 1;
+    }
+
+    #hamburger span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+
+        background: white;
+    }
+
+    /* Main */
+    main {
+        flex-direction: column;
+    }
+}
