@@ -82,7 +82,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 85%;
+    min-height: 90%;
 }
 
 .main-side-nav {
@@ -155,7 +155,7 @@ footer {
 }
 
 /* large devices */
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
     /* header */
     #site-nav > *:not(:last-child) {
         display: none;
@@ -205,5 +205,32 @@ footer {
     /* Main */
     main {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 150px;
+        height: auto;
+    }
+
+    .gallery td {
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+    }
+}
+
+/* phones */
+@media screen and (max-width: 600px) {
+    /* footer */
+    footer p {
+        font-size: 1rem;
+    }
+    
+    #socials img {
+        width: auto;
+        height: 50px;
+        padding: 5px;
     }
 }
