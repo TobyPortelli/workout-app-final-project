@@ -32,7 +32,7 @@ body {
     justify-content: space-around;
     align-items: center;
     position:fixed;
-    height: 5%;
+    height: 72px;
     width: 100%;
     top: 0;
     background-color: rgba(37, 35, 43, .95);
@@ -78,7 +78,7 @@ a:hover {
 
 /* Main */
 main {
-    padding-top: 5%;
+    padding-top: 72px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -92,6 +92,10 @@ main {
     flex-direction: column;
     justify-content: center;
 } 
+
+#filter {
+    display: none;
+}
 
 #search-accordion-title {
     padding-top: 20px;
@@ -219,10 +223,46 @@ footer {
         width: 50%;
         text-align: center;
     }
+
+    /* footer */
+    footer p {
+        font-size: 1.25rem;
+    }
 }
 
 /* phones */
 @media screen and (max-width: 600px) {
+    /* header */
+    #logo {
+        font-size: 1.5rem;
+    }
+
+    /* main */
+    #search-accordion-title, #search-nav-list {
+        display: none;
+    }
+
+    .main-side-nav {
+        width: 80%;
+        height: auto;
+        padding: 50px 0;
+    }
+
+    #filter {
+        display: block;
+    }
+
+    #filter button {
+        width: 100%;
+        height: auto;
+        background: #045300;
+        color: white;
+        margin-top: 10px;
+        font-size: .9375rem;
+        line-height: 1.66666667;
+        text-transform: uppercase;
+    }
+
     /* footer */
     footer p {
         font-size: 1rem;
@@ -230,7 +270,15 @@ footer {
     
     #socials img {
         width: auto;
-        height: 50px;
+        height: 40%;
         padding: 5px;
     }
+}
+
+/* tiny */
+@media screen and (max-width: 380px) {
+    .gallery td {
+        width: 100%;
+    }
+    
 }
