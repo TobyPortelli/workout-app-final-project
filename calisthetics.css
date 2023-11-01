@@ -103,8 +103,7 @@ main {
     text-transform: uppercase;
 }
 
-#search-nav-list ul li {
-    list-style-type: none;
+.search-accordion header {
     font-size: 1.25rem;
     margin: 10px 0;
 }
